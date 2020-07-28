@@ -8,9 +8,6 @@
   </head>
   <body>
   <section class="section">
-  
-  
-
 
 
     <div class="container">
@@ -64,14 +61,14 @@
 		
 		
 		 <p class="subtitle">
-        My first website with <strong>Bulma</strong>!
+        PSA Ausreichend? Gefahren am Notfallort?
      
 	  
 
 		</p>
 		
 		
-		<button class="button is-success" onclick= "DoneXX(c)">Durchgeführt</button>
+		<button class="button is-success" onclick= "Done01(c)">Durchgeführt</button>
 		
 
 		
@@ -86,8 +83,8 @@
 		
 		<script>
 		
-		f=DoneXX(c);
-		function DoneXX(b) {
+		f=Done01(c);
+		function Done01(b) {
 		  
 		  document.getElementById("demo3").innerHTML = ~~( b/60);
 		  document.getElementById("demo4").innerHTML = b%60;	 
@@ -95,7 +92,70 @@
 		</script> 
 	
 	
+	
+	 <p class="subtitle">
+	 <br>
+        Verletzungsmechanismus? Lagemeldung? Anzahl Betroffene?
+     
+	  
+
+		</p>
 		
+		
+		<button class="button is-success" onclick= "Done02(c)">Durchgeführt</button>
+		
+
+		
+
+
+		<p id="demo5"></p>minuten
+		<p id="demo6"></p>sekunden
+		<br>
+		
+		
+		
+		
+		<script>
+		
+		f=Done02(c);
+		function Done02(b) {
+		  
+		  document.getElementById("demo5").innerHTML = ~~( b/60);
+		  document.getElementById("demo6").innerHTML = b%60;	 
+		}
+		</script> 
+		
+		 <p class="subtitle">
+		 <br>
+        Weitere Einsatzkräfte alarmiert?
+     
+	  
+
+		</p>
+		
+		
+		<button class="button is-success" onclick= "Done03(c)">Durchgeführt</button>
+		
+
+		
+
+
+		<p id="demo7"></p>minuten
+		<p id="demo8"></p>sekunden
+		<br>
+		
+		
+		
+		
+		<script>
+		
+		f=Done03(c);
+		function Done03(b) {
+		  
+		  document.getElementById("demo7").innerHTML = ~~( b/60);
+		  document.getElementById("demo8").innerHTML = b%60;	 
+		}
+		</script> 
 		
 		
 
