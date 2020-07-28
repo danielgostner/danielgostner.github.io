@@ -8,21 +8,40 @@
   </head>
   <body>
   <section class="section">
+  
+  
+
+
+
     <div class="container">
       <h1 class="title">
         Hello World
       </h1>
       <p class="subtitle">
         My first website with <strong>Bulma</strong>!
-      </p>
+     
 	  <button onclick="setTimeout(myFunction, 3000);">Try it</button>
 
 		<script>
 		function myFunction() {
 		  alert('Hello');
 		}
+		 
 		</script>
+		</p>
+		
+		<button onClick="myTimer = setInterval(myCounter, 1000)">Start counter!</button>
 
+<p id="demo">Click on the button above and I will count forever.</p>
+
+<button onClick="clearInterval(myTimer)">Stop counter!</button>
+
+<script>
+var c = 0;
+function myCounter() {
+  document.getElementById("demo").innerHTML = ++c;
+}
+</script> 
 
     </div>
   </section>
