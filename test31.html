@@ -24,7 +24,7 @@
       </h1>
      
 		
-		<button onClick="myTimer = setInterval(myCounter, 1000)">Start Einsatz!</button>
+		<button class = "button is-info" onClick="myTimer = setInterval(myCounter, 1000)">Start Einsatz!</button>
 
 
 		<p id="demo1" min> </p> minuten 
@@ -33,7 +33,7 @@
 	
 	
 	<p </p>
-	<button onClick="clearInterval(myTimer)">Stopp Einsatz!</button>
+	<button class="button is-danger" onClick="clearInterval(myTimer)">Stopp Einsatz!</button>
 
 		<script>
 		var c = -1;
@@ -71,11 +71,17 @@
 		</p>
 		
 		
-		<button onclick= "DoneXX(c)">Durchgeführt</button>
+		<button class="button is-success" onclick= "DoneXX(c)">Durchgeführt</button>
 		
-		<p id="demo3" min> </p>  min 
-		<p id="demo4" sec> </p> sec   
-		<p </p>
+
+		
+
+
+		<p id="demo3"></p>minuten
+		<p id="demo4"></p>sekunden
+		<br>
+		
+		
 		
 		
 		<script>
