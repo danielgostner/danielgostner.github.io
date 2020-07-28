@@ -15,33 +15,83 @@
 
     <div class="container">
       <h1 class="title">
-        Hello World
+        Neuer Einsatz
+		<p id="date"></p>
+		<script>
+		document.getElementById("date").innerHTML = Date();
+		</script>
+	
       </h1>
-      <p class="subtitle">
-        My first website with <strong>Bulma</strong>!
      
-	  <button onclick="setTimeout(myFunction, 3000);">Try it</button>
+		
+		<button onClick="myTimer = setInterval(myCounter, 1000)">Start Einsatz!</button>
+
+
+		<p id="demo1" min> </p> minuten 
+		<p id="demo2" sec> </p> sekunden   
+		<p </p>
+	
+	
+	<p </p>
+	<button onClick="clearInterval(myTimer)">Stopp Einsatz!</button>
 
 		<script>
-		function myFunction() {
-		  alert('Hello');
-		}
+		var c = -1;
+		c = myCounter();
+		function myCounter() {
+		  c = ++c;
+		  document.getElementById("demo1").innerHTML = ~~( c/60);
+		  document.getElementById("demo2").innerHTML = c%60;
+		  
+		return c;
 		 
+		}
+		</script> 
+		
+		<p </p>
+		<p </p>
+		<br>
+		
+		
+		<h1 class="title">
+        Szenenüberblick
+		<p id="date"></p>
+		<script>
+		document.getElementById("date").innerHTML = Date();
 		</script>
+	
+      </h1>
+		
+		
+		 <p class="subtitle">
+        My first website with <strong>Bulma</strong>!
+     
+	  
+
 		</p>
 		
-		<button onClick="myTimer = setInterval(myCounter, 1000)">Start counter!</button>
-
-<p id="demo">Click on the button above and I will count forever.</p>
-
-<button onClick="clearInterval(myTimer)">Stop counter!</button>
-
-<script>
-var c = 0;
-function myCounter() {
-  document.getElementById("demo").innerHTML = ++c;
-}
-</script> 
+		
+		<button onclick= "DoneXX(c)">Durchgeführt</button>
+		
+		<p id="demo3" min> </p>  min 
+		<p id="demo4" sec> </p> sec   
+		<p </p>
+		
+		
+		<script>
+		
+		f=DoneXX(c);
+		function DoneXX(b) {
+		  
+		  document.getElementById("demo3").innerHTML = ~~( b/60);
+		  document.getElementById("demo4").innerHTML = b%60;	 
+		}
+		</script> 
+	
+	
+		
+		
+		
 
     </div>
   </section>
