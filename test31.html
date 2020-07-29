@@ -48,7 +48,40 @@
 		</script> 
 
 <br>
-<h1 class="title">
+<br>
+		<button class="button is-primary" onclick= "Done36(c)">NEF Alarmierung</button>
+
+		<table>
+		<tbody>
+		<tr>
+		<td><p id="demo73"></p>Min.</td>
+		<td><p id="demo74"></p>Sek.</td>
+		</tr>
+		</tbody>
+		</table>
+	
+		<script>
+		
+		f=Done36(c);
+		function Done36(b) {
+		  
+		  document.getElementById("demo73").innerHTML = ~~( b/60);
+		  document.getElementById("demo74").innerHTML = b%60;	 
+		}
+		</script>
+		
+Gehe zu:
+<a href="#szeneerst">SzeneEE</a>
+<a href="#a">A</a>	
+<a href="#b">B</a>
+<a href="#c">C</a>	
+<a href="#d">D</a>	
+<a href="#e">E</a>	
+<a href="#trauma">Ad Trauma</a>				
+<a href="#cpr">Ad CPR</a>
+		
+<br>
+<h1 class="title" id="szeneerst" >
         Szenenüberblick & Ersteindruck
 		</h1>
 		
@@ -133,7 +166,7 @@
 		
 <p class="subtitle">
 		 <br>
-        Auf starke Blutungen kontrolliert?</p>
+        Starke Blutungen gestillt?</p>
 		
 		<button class="button is-success" onclick= "Done03(c)">Durchgeführt</button>
 		
@@ -155,7 +188,32 @@
 		  document.getElementById("demo8").innerHTML = b%60;	 
 		}
 		</script> 
-		
+
+		<table>
+		<tbody>
+		<tr>
+		<td> 
+			<label class="checkbox">
+				<input type="checkbox">
+				Abb
+			</label> 
+		</td>
+		<td>
+			<label class="checkbox">
+				<input type="checkbox">
+				Zeit
+			</label>
+		</td>
+		<td>
+			<label class="checkbox">
+				<input type="checkbox">
+				Isr. Bdg.
+			</label>
+		</td>		
+		</tr>
+		</tbody>
+		</table>	
+	
  <p class="subtitle">
 		 <br>
         Alter, AVPU abgeschätzt?</p>
@@ -180,9 +238,19 @@
 		  document.getElementById("demo12").innerHTML = b%60;	 
 		}
 		</script> 
-		
+	
+Gehe zu:
+<a href="#szeneerst">SzeneEE</a>
+<a href="#a">A</a>	
+<a href="#b">B</a>
+<a href="#c">C</a>	
+<a href="#d">D</a>	
+<a href="#e">E</a>	
+<a href="#trauma">Ad Trauma</a>	
+<a href="#cpr">Ad CPR</a>
+	
 <br>
-<h1 class="title">
+<h1 class="title" id="a">
         Airway
 		</h1>
 
@@ -243,19 +311,19 @@
 		<td> 
 			<label class="checkbox">
 				<input type="checkbox">
-				Guedeltubus/Wendltubus 
+				Gue / WT 
 			</label> 
 		</td>
 		<td>
 			<label class="checkbox">
 				<input type="checkbox">
-				Reklination
+				Rekl.
 			</label>
 		</td>
 		<td>
 			<label class="checkbox">
 				<input type="checkbox">
-				Seitenlage
+				Seit.
 			</label>
 		</td>
 		<td>
@@ -263,14 +331,29 @@
 				<input type="checkbox">
 				Esmarch
 			</label>
-		</td>		
+		</td>
+		<td>
+			<label class="checkbox">
+				<input type="checkbox">
+				Abs. Bereitsch.
+			</label>
+		</td>			
 		</tr>
 		</tbody>
 		</table>
-		
+
+Gehe zu:
+<a href="#szeneerst">SzeneEE</a>
+<a href="#a">A</a>	
+<a href="#b">B</a>
+<a href="#c">C</a>	
+<a href="#d">D</a>	
+<a href="#e">E</a>	
+<a href="#trauma">Ad Trauma</a>			
+<a href="#cpr">Ad CPR</a>
 		
 <br>
-<h1 class="title">
+<h1 class="title" id="b">
         Breathing
 		</h1>
 
@@ -380,7 +463,7 @@
 		<td> 
 			<label class="checkbox">
 				<input type="checkbox">
-				Assistierte Beatmung 
+				Ass Bea 
 			</label> 
 		</td>
 		<td>
@@ -392,34 +475,43 @@
 		<td>
 			<label class="checkbox">
 				<input type="checkbox">
-				O2-Maske 8l
+				O2 8l
 			</label>
 		</td>
 		<td>
 			<label class="checkbox">
 				<input type="checkbox">
-				O2-Maske 15l
+				O2 15l
 			</label>
 		</td>	
 		<td>
 			<label class="checkbox">
 				<input type="checkbox">
-				Beengende Kleidung
+				Kl auf
 			</label>
 		</td>	
 		<td>
 			<label class="checkbox">
 				<input type="checkbox">
-				Lippenbremse
+				Lipp. Bremse
 			</label>
 		</td>			
 		</tr>
 		</tbody>
 		</table>
 
+Gehe zu:
+<a href="#szeneerst">SzeneEE</a>
+<a href="#a">A</a>	
+<a href="#b">B</a>
+<a href="#c">C</a>	
+<a href="#d">D</a>	
+<a href="#e">E</a>	
+<a href="#trauma">Ad Trauma</a>	
+<a href="#cpr">Ad CPR</a>
 		
 <br>
-<h1 class="title">
+<h1 class="title" id="c">
         Circulation
 		</h1>
 
@@ -548,8 +640,18 @@
 		}
 		</script> 				
 
+Gehe zu:
+<a href="#szeneerst">SzeneEE</a>
+<a href="#a">A</a>	
+<a href="#b">B</a>
+<a href="#c">C</a>	
+<a href="#d">D</a>	
+<a href="#e">E</a>	
+<a href="#trauma">Ad Trauma</a>	
+<a href="#cpr">Ad CPR</a>
+
 <br>
-<h1 class="title">
+<h1 class="title" id="stu">
         STU
 		</h1>
 <p class="subtitle">
@@ -752,19 +854,20 @@
 		  document.getElementById("demo50").innerHTML = b%60;	 
 		}
 		</script>
+		
 		<table>
 		<tbody>
 		<tr>
 		<td> 
 			<label class="checkbox">
 				<input type="checkbox">
-				Knierolle
+				Knie Rolle
 			</label> 
 		</td>
 		<td>
 			<label class="checkbox">
 				<input type="checkbox">
-				Beckenschlinge
+				T Pot
 			</label>
 		</td>
 		<td>
@@ -782,13 +885,685 @@
 		<td>
 			<label class="checkbox">
 				<input type="checkbox">
-				Trochanter major?
+				Troch. major?
 			</label>
 		</td>			
 		</tr>
 		</tbody>
 		</table>		
+
+Gehe zu:
+<a href="#szeneerst">SzeneEE</a>
+<a href="#a">A</a>	
+<a href="#b">B</a>
+<a href="#c">C</a>	
+<a href="#d">D</a>	
+<a href="#e">E</a>	
+<a href="#trauma">Ad Trauma</a>	
+<a href="#cpr">Ad CPR</a>
 		
+<br>
+<h1 class="title" id="d">
+        Disability
+		</h1>	
+
+<p class="subtitle">
+		 <br>
+        GCS Schätzen</p>
+		
+		<button class="button is-success" onclick= "Done25(c)">Durchgeführt</button>
+
+		<table>
+		<tbody>
+		<tr>
+		<td><p id="demo51"></p>Min.</td>
+		<td><p id="demo52"></p>Sek.</td>
+		</tr>
+		</tbody>
+		</table>
+	
+		<script>
+		
+		f=Done25(c);
+		function Done25(b) {
+		  
+		  document.getElementById("demo51").innerHTML = ~~( b/60);
+		  document.getElementById("demo52").innerHTML = b%60;	 
+		}
+		</script>
+
+		<table>
+		<tbody>
+		<tr>
+		<td> 
+			<label class="checkbox">
+				<input type="checkbox">
+				Eye 4
+			</label> 
+		</td>
+		<td>
+			<label class="checkbox">
+				<input type="checkbox">
+				Verb 5
+			</label>
+		</td>
+		<td>
+			<label class="checkbox">
+				<input type="checkbox">
+				Motor 6
+			</label>
+		</td>		
+		</tr>
+		</tbody>
+		</table>	
+
+<p class="subtitle">
+		 <br>
+        Stroke-Check</p>
+		
+		<button class="button is-success" onclick= "Done26(c)">Durchgeführt</button>
+
+		<table>
+		<tbody>
+		<tr>
+		<td><p id="demo53"></p>Min.</td>
+		<td><p id="demo54"></p>Sek.</td>
+		</tr>
+		</tbody>
+		</table>
+	
+		<script>
+		
+		f=Done26(c);
+		function Done26(b) {
+		  
+		  document.getElementById("demo53").innerHTML = ~~( b/60);
+		  document.getElementById("demo54").innerHTML = b%60;	 
+		}
+		</script>
+
+<p class="subtitle">
+		 <br>
+        Pupillen</p>
+		
+		<button class="button is-success" onclick= "Done27(c)">Durchgeführt</button>
+
+		<table>
+		<tbody>
+		<tr>
+		<td><p id="demo55"></p>Min.</td>
+		<td><p id="demo56"></p>Sek.</td>
+		</tr>
+		</tbody>
+		</table>
+	
+		<script>
+		
+		f=Done27(c);
+		function Done27(b) {
+		  
+		  document.getElementById("demo55").innerHTML = ~~( b/60);
+		  document.getElementById("demo56").innerHTML = b%60;	 
+		}
+		</script>
+
+<p class="subtitle">
+		 <br>
+        BZ</p>
+		
+		<button class="button is-success" onclick= "Done28(c)">Durchgeführt</button>
+
+		<table>
+		<tbody>
+		<tr>
+		<td><p id="demo57"></p>Min.</td>
+		<td><p id="demo58"></p>Sek.</td>
+		</tr>
+		</tbody>
+		</table>
+	
+		<script>
+		
+		f=Done28(c);
+		function Done28(b) {
+		  
+		  document.getElementById("demo57").innerHTML = ~~( b/60);
+		  document.getElementById("demo58").innerHTML = b%60;	 
+		}
+		</script>
+
+Gehe zu:
+<a href="#szeneerst">SzeneEE</a>
+<a href="#a">A</a>	
+<a href="#b">B</a>
+<a href="#c">C</a>	
+<a href="#d">D</a>	
+<a href="#e">E</a>	
+<a href="#trauma">Ad Trauma</a>	
+<a href="#cpr">Ad CPR</a>
+		
+<br>
+<h1 class="title" id="e">
+        Exposure
+		</h1>			
+
+<p class="subtitle">
+		 <br>
+        EKG</p>
+		
+		<button class="button is-success" onclick= "Done29(c)">Durchgeführt</button>
+
+		<table>
+		<tbody>
+		<tr>
+		<td><p id="demo59"></p>Min.</td>
+		<td><p id="demo60"></p>Sek.</td>
+		</tr>
+		</tbody>
+		</table>
+	
+		<script>
+		
+		f=Done29(c);
+		function Done29(b) {
+		  
+		  document.getElementById("demo59").innerHTML = ~~( b/60);
+		  document.getElementById("demo60").innerHTML = b%60;	 
+		}
+		</script>
+
+<p class="subtitle">
+		 <br>
+        RR/P/T</p>
+		
+		<button class="button is-success" onclick= "Done30(c)">Durchgeführt</button>
+
+		<table>
+		<tbody>
+		<tr>
+		<td><p id="demo61"></p>Min.</td>
+		<td><p id="demo62"></p>Sek.</td>
+		</tr>
+		</tbody>
+		</table>
+	
+		<script>
+		
+		f=Done30(c);
+		function Done30(b) {
+		  
+		  document.getElementById("demo61").innerHTML = ~~( b/60);
+		  document.getElementById("demo62").innerHTML = b%60;	 
+		}
+		</script>
+
+<p class="subtitle">
+		 <br>
+        Symptome</p>
+		
+		<button class="button is-success" onclick= "Done31(c)">Durchgeführt</button>
+
+		<table>
+		<tbody>
+		<tr>
+		<td><p id="demo63"></p>Min.</td>
+		<td><p id="demo64"></p>Sek.</td>
+		</tr>
+		</tbody>
+		</table>
+	
+		<script>
+		
+		f=Done31(c);
+		function Done31(b) {
+		  
+		  document.getElementById("demo63").innerHTML = ~~( b/60);
+		  document.getElementById("demo64").innerHTML = b%60;	 
+		}
+		</script>		
+
+
+		<table>
+		<tbody>
+		<tr>
+		<td> 
+			<label class="checkbox">
+				<input type="checkbox">
+				Onset
+			</label> 
+		</td>
+		<td>
+			<label class="checkbox">
+				<input type="checkbox">
+				Prov Pal
+			</label>
+		</td>
+		<td>
+			<label class="checkbox">
+				<input type="checkbox">
+				Qual
+			</label>
+		</td>
+		<td>
+			<label class="checkbox">
+				<input type="checkbox">
+				Rad
+			</label>
+		</td>	
+		<td>
+			<label class="checkbox">
+				<input type="checkbox">
+				Sever
+			</label>
+		</td>	
+		<td>
+			<label class="checkbox">
+				<input type="checkbox">
+				Time
+			</label>
+		</td>			
+		</tr>
+		</tbody>
+		</table>		
+
+<p class="subtitle">
+		 <br>
+        AMPLER</p>
+		
+		<button class="button is-success" onclick= "Done32(c)">Durchgeführt</button>
+
+		<table>
+		<tbody>
+		<tr>
+		<td><p id="demo65"></p>Min.</td>
+		<td><p id="demo66"></p>Sek.</td>
+		</tr>
+		</tbody>
+		</table>
+	
+		<script>
+		
+		f=Done32(c);
+		function Done32(b) {
+		  
+		  document.getElementById("demo65").innerHTML = ~~( b/60);
+		  document.getElementById("demo66").innerHTML = b%60;	 
+		}
+		</script>
+
+		<table>
+		<tbody>
+		<tr>
+		<td> 
+			<label class="checkbox">
+				<input type="checkbox">
+				All
+			</label> 
+		</td>
+		<td>
+			<label class="checkbox">
+				<input type="checkbox">
+				Med
+			</label>
+		</td>
+		<td>
+			<label class="checkbox">
+				<input type="checkbox">
+				Pat Gesch.
+			</label>
+		</td>
+		<td>
+			<label class="checkbox">
+				<input type="checkbox">
+				Letzte Ein.
+			</label>
+		</td>	
+		<td>
+			<label class="checkbox">
+				<input type="checkbox">
+				Ereig.
+			</label>
+		</td>	
+		<td>
+			<label class="checkbox">
+				<input type="checkbox">
+				Risiko
+			</label>
+		</td>			
+		</tr>
+		</tbody>
+		</table>
+
+Gehe zu:
+<a href="#szeneerst">SzeneEE</a>
+<a href="#a">A</a>	
+<a href="#b">B</a>
+<a href="#c">C</a>	
+<a href="#d">D</a>	
+<a href="#e">E</a>	
+<a href="#trauma">Ad Trauma</a>	
+<a href="#cpr">Ad CPR</a>	
+		
+<br>
+<h1 class="title" id="trauma">
+        Ad Trauma
+		</h1>			
+
+<p class="subtitle">
+		 <br>
+        Helmabnahme</p>
+		
+		<button class="button is-success" onclick= "Done33(c)">Durchgeführt</button>
+
+		<table>
+		<tbody>
+		<tr>
+		<td><p id="demo67"></p>Min.</td>
+		<td><p id="demo68"></p>Sek.</td>
+		</tr>
+		</tbody>
+		</table>
+	
+		<script>
+		
+		f=Done33(c);
+		function Done33(b) {
+		  
+		  document.getElementById("demo67").innerHTML = ~~( b/60);
+		  document.getElementById("demo68").innerHTML = b%60;	 
+		}
+		</script>
+
+		<table>
+		<tbody>
+		<tr>
+		<td> 
+			<label class="checkbox">
+				<input type="checkbox">
+				GNC
+			</label> 
+		</td>	
+		</tr>
+		</tbody>
+		</table>
+
+<p class="subtitle">
+		 <br>
+        Schaufeltrage + Stiffneck + Vacc.</p>
+		
+		<button class="button is-success" onclick= "Done34(c)">Durchgeführt</button>
+
+		<table>
+		<tbody>
+		<tr>
+		<td><p id="demo69"></p>Min.</td>
+		<td><p id="demo70"></p>Sek.</td>
+		</tr>
+		</tbody>
+		</table>
+	
+		<script>
+		
+		f=Done34(c);
+		function Done34(b) {
+		  
+		  document.getElementById("demo69").innerHTML = ~~( b/60);
+		  document.getElementById("demo70").innerHTML = b%60;	 
+		}
+		</script>
+
+		<table>
+		<tbody>
+		<tr>
+		<td> 
+			<label class="checkbox">
+				<input type="checkbox">
+				GNC
+			</label> 
+		</td>	
+		</tr>
+		</tbody>
+		</table>	
+
+<p class="subtitle">
+		 <br>
+        Schienung</p>
+		
+		<button class="button is-success" onclick= "Done35(c)">Durchgeführt</button>
+
+		<table>
+		<tbody>
+		<tr>
+		<td><p id="demo71"></p>Min.</td>
+		<td><p id="demo72"></p>Sek.</td>
+		</tr>
+		</tbody>
+		</table>
+	
+		<script>
+		
+		f=Done35(c);
+		function Done35(b) {
+		  
+		  document.getElementById("demo71").innerHTML = ~~( b/60);
+		  document.getElementById("demo72").innerHTML = b%60;	 
+		}
+		</script>
+
+		<table>
+		<tbody>
+		<tr>
+		<td> 
+			<label class="checkbox">
+				<input type="checkbox">
+				MDS
+			</label> 
+		</td>	
+		</tr>
+		</tbody>
+		</table>	
+
+		
+<br>
+<h1 class="title" id="cpr">
+        Ad CPR
+		</h1>	
+
+<p class="subtitle">
+		 <br>
+        Beginn HDM</p>
+		
+		<button class="button is-success" onclick= "Done37(c)">Durchgeführt</button>
+
+		<table>
+		<tbody>
+		<tr>
+		<td><p id="demo75"></p>Min.</td>
+		<td><p id="demo76"></p>Sek.</td>
+		</tr>
+		</tbody>
+		</table>
+	
+		<script>
+		
+		f=Done37(c);
+		function Done37(b) {
+		  
+		  document.getElementById("demo75").innerHTML = ~~( b/60);
+		  document.getElementById("demo76").innerHTML = b%60;	 
+		}
+		</script>
+
+		<table>
+		<tbody>
+		<tr>
+		<td> 
+			<label class="checkbox">
+				<input type="checkbox">
+				Druckpunkt
+			</label> 
+		</td>	
+		<td> 
+			<label class="checkbox">
+				<input type="checkbox">
+				Tiefe
+			</label> 
+		</td>		
+		</tr>
+		</tbody>
+		</table>
+
+<p class="subtitle">
+		 <br>
+        Analysen</p>
+		
+		<button class="button is-success" onclick= "Done38(c)">Durchgeführt</button>
+
+		<table>
+		<tbody>
+		<tr>
+		<td><p id="demo77"></p>Min.</td>
+		<td><p id="demo78"></p>Sek.</td>
+		</tr>
+		</tbody>
+		</table>
+	
+		<script>
+		
+		f=Done38(c);
+		function Done38(b) {
+		  
+		  document.getElementById("demo77").innerHTML = ~~( b/60);
+		  document.getElementById("demo78").innerHTML = b%60;	 
+		}
+		</script>		
+
+		<table>
+		<tbody>
+		<tr>
+		<td> 
+			<label class="checkbox">
+				<input type="checkbox">
+				S1
+			</label> 
+		</td>
+		<td> 
+			<label class="checkbox">
+				<input type="checkbox">
+				S2
+			</label> 
+		</td>
+		<td> 
+			<label class="checkbox">
+				<input type="checkbox">
+				S3
+			</label> 
+		</td>
+		<td> 
+			<label class="checkbox">
+				<input type="checkbox">
+				S4
+			</label> 
+		</td>
+		<td> 
+			<label class="checkbox">
+				<input type="checkbox">
+				S5
+			</label> 
+		</td>		
+		<td> 
+			<label class="checkbox">
+				<input type="checkbox">
+				KIs?
+			</label> 
+		</td>		
+		</tr>
+		</tbody>
+		</table>
+		
+<p class="subtitle">
+		 <br>
+        Med</p>
+		
+		<button class="button is-success" onclick= "Done39(c)">Durchgeführt</button>
+
+		<table>
+		<tbody>
+		<tr>
+		<td><p id="demo79"></p>Min.</td>
+		<td><p id="demo80"></p>Sek.</td>
+		</tr>
+		</tbody>
+		</table>
+	
+		<script>
+		
+		f=Done39(c);
+		function Done39(b) {
+		  
+		  document.getElementById("demo79").innerHTML = ~~( b/60);
+		  document.getElementById("demo80").innerHTML = b%60;	 
+		}
+		</script>		
+
+		<table>
+		<tbody>
+		<tr>
+		<td> 
+			<label class="checkbox">
+				<input type="checkbox">
+				SB: A1mg n3.S
+			</label> 
+		</td>
+		<td> 
+			<label class="checkbox">
+				<input type="checkbox">
+				SB: A1mg n5.S
+			</label> 
+		</td>
+		<td> 
+			<label class="checkbox">
+				<input type="checkbox">
+				SB: S300mg n3.S
+			</label> 
+		</td>
+		<td> 
+			<label class="checkbox">
+				<input type="checkbox">
+				SB: S150mg n5.S
+			</label> 
+		</td>
+		<td> 
+			<label class="checkbox">
+				<input type="checkbox">
+				NSB: A1mg sof
+			</label> 
+		</td>		
+		<td> 
+			<label class="checkbox">
+				<input type="checkbox">
+				NSB: A1mg alle 3.5min
+			</label> 
+		</td>	
+		<td> 
+			<label class="checkbox">
+				<input type="checkbox">
+				Hs HITS
+			</label> 
+		</td>		
+		</tr>
+		</tbody>
+		</table>
+		
+Gehe zu:
+<a href="#szeneerst">SzeneEE</a>
+<a href="#a">A</a>	
+<a href="#b">B</a>
+<a href="#c">C</a>	
+<a href="#d">D</a>	
+<a href="#e">E</a>	
+<a href="#trauma">Ad Trauma</a>				
+<a href="#cpr">Ad CPR</a>		
     </div>
   </section>
   </body>
