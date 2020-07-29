@@ -13,16 +13,13 @@
 
     <div class="container">
       <h1 class="title">
-	  <button class = "button is-warning" onClick="window.location.reload();">Neuen Einsatz starten</button> <br>
+	  <button class = "button is-warning" onClick="window.location.reload();">Daten löschen</button> <br>
         Einsatz
 		<p id="date"></p>
 		<script>
 		document.getElementById("date").innerHTML = Date();
-		</script>
-	
-      </h1>
+		</script> </h1>
      
-		
 		<button class = "button is-info" onClick="myTimer = setInterval(myCounter, 1000)">Start Einsatz!</button>
 
 		<table>
@@ -34,10 +31,9 @@
 		</tbody>
 		</table>
 	
-	
-	<p </p>
-	<button class="button is-danger" onClick="clearInterval(myTimer)">Stopp Einsatz!</button>
 
+	<button class="button is-danger" onClick="clearInterval(myTimer)">Stopp Einsatz!</button>
+	<br>
 		<script>
 		var c = -1;
 		c = myCounter();
@@ -50,35 +46,18 @@
 		 
 		}
 		</script> 
+
+<br>
+<h1 class="title">
+        Szenenüberblick & Ersteindruck
+		</h1>
 		
-		<p </p>
-		<p </p>
-		<br>
 		
-		
-		<h1 class="title">
-        Szenenüberblick
-		<p id="date"></p>
-		<script>
-		document.getElementById("date").innerHTML = Date();
-		</script>
+<p class="subtitle">
+        PSA Ausreichend? Gefahren am Notfallort?</p>
 	
-      </h1>
-		
-		
-		 <p class="subtitle">
-        PSA Ausreichend? Gefahren am Notfallort?
-     
-	  
-
-		</p>
-		
-		
 		<button class="button is-success" onclick= "Done01(c)">Durchgeführt</button>
-		
 
-		<table class="table">
-		
 		<table>
 		<tbody>
 		<tr>
@@ -87,8 +66,6 @@
 		</tr>
 		</tbody>
 		</table>
-		
-		
 		
 		<script>
 		
@@ -102,15 +79,12 @@
 	
 	
 	
-	 <p class="subtitle">
+<p class="subtitle">
 	 <br>
         Verletzungsmechanismus? Lagemeldung? Anzahl Betroffene?</p>
 		
 		
 		<button class="button is-success" onclick= "Done02(c)">Durchgeführt</button>
-		
-
-		
 
 		<table>
 		<tbody>
@@ -120,9 +94,7 @@
 		</tr>
 		</tbody>
 		</table>
-		
-		
-		
+
 		<script>
 		
 		f=Done02(c);
@@ -135,18 +107,36 @@
 		
 		 <p class="subtitle">
 		 <br>
-        Weitere Einsatzkräfte alarmiert?
-     
-	  
-
-		</p>
+        Weitere Einsatzkräfte alarmiert?</p>
 		
+		<button class="button is-success" onclick= "Done04(c)">Durchgeführt</button>	
+
+		<table>
+		<tbody>
+		<tr>
+		<td><p id="demo9"></p>Min.</td>
+		<td><p id="demo10"></p>Sek.</td>
+		</tr>
+		</tbody>
+		</table>
+	
+		<script>
+		
+		f=Done04(c);
+		function Done04(b) {
+		  
+		  document.getElementById("demo9").innerHTML = ~~( b/60);
+		  document.getElementById("demo10").innerHTML = b%60;	 
+		}
+		</script> 
+		
+		
+<p class="subtitle">
+		 <br>
+        Auf starke Blutungen kontrolliert?</p>
 		
 		<button class="button is-success" onclick= "Done03(c)">Durchgeführt</button>
 		
-
-		
-
 		<table>
 		<tbody>
 		<tr>
@@ -155,10 +145,7 @@
 		</tr>
 		</tbody>
 		</table>
-		
-		
-		
-		
+
 		<script>
 		
 		f=Done03(c);
@@ -169,7 +156,327 @@
 		}
 		</script> 
 		
+ <p class="subtitle">
+		 <br>
+        Alter, AVPU abgeschätzt?</p>
 		
+		<button class="button is-success" onclick= "Done05(c)">Durchgeführt</button>
+
+		<table>
+		<tbody>
+		<tr>
+		<td><p id="demo11"></p>Min.</td>
+		<td><p id="demo12"></p>Sek.</td>
+		</tr>
+		</tbody>
+		</table>
+	
+		<script>
+		
+		f=Done05(c);
+		function Done05(b) {
+		  
+		  document.getElementById("demo11").innerHTML = ~~( b/60);
+		  document.getElementById("demo12").innerHTML = b%60;	 
+		}
+		</script> 
+		
+<br>
+<h1 class="title">
+        Airway
+		</h1>
+
+<p class="subtitle">
+		 <br>
+        Atemweg kontrolliert/beurteilt?</p>
+		
+		<button class="button is-success" onclick= "Done06(c)">Durchgeführt</button>
+
+		<table>
+		<tbody>
+		<tr>
+		<td><p id="demo13"></p>Min.</td>
+		<td><p id="demo14"></p>Sek.</td>
+		</tr>
+		</tbody>
+		</table>
+	
+		<script>
+		
+		f=Done06(c);
+		function Done06(b) {
+		  
+		  document.getElementById("demo13").innerHTML = ~~( b/60);
+		  document.getElementById("demo14").innerHTML = b%60;	 
+		}
+		</script> 
+		
+
+<p class="subtitle">
+	
+        ggf. Maßnahme gesetzt?</p>
+		
+		<button class="button is-success" onclick= "Done07(c)">Durchgeführt</button>
+
+		<table>
+		<tbody>
+		<tr>
+		<td><p id="demo15"></p>Min.</td>
+		<td><p id="demo16"></p>Sek.</td>
+		</tr>
+		</tbody>
+		</table>
+	
+		<script>
+		
+		f=Done07(c);
+		function Done07(b) {
+		  
+		  document.getElementById("demo15").innerHTML = ~~( b/60);
+		  document.getElementById("demo16").innerHTML = b%60;	 
+		}
+		</script> 
+<br>
+<h1 class="title">
+        Breathing
+		</h1>
+
+<p class="subtitle">
+		 <br>
+        Atemarbeit und Atemmechanik überprüft?</p>
+		
+		<button class="button is-success" onclick= "Done08(c)">Durchgeführt</button>
+
+		<table>
+		<tbody>
+		<tr>
+		<td><p id="demo17"></p>Min.</td>
+		<td><p id="demo18"></p>Sek.</td>
+		</tr>
+		</tbody>
+		</table>
+	
+		<script>
+		
+		f=Done08(c);
+		function Done08(b) {
+		  
+		  document.getElementById("demo17").innerHTML = ~~( b/60);
+		  document.getElementById("demo18").innerHTML = b%60;	 
+		}
+		</script> 
+		
+<p class="subtitle">
+		 <br>
+        Atemfrequenz?</p>
+		
+		<button class="button is-success" onclick= "Done09(c)">Durchgeführt</button>
+
+		<table>
+		<tbody>
+		<tr>
+		<td><p id="demo19"></p>Min.</td>
+		<td><p id="demo20"></p>Sek.</td>
+		</tr>
+		</tbody>
+		</table>
+	
+		<script>
+		
+		f=Done09(c);
+		function Done09(b) {
+		  
+		  document.getElementById("demo19").innerHTML = ~~( b/60);
+		  document.getElementById("demo20").innerHTML = b%60;	 
+		}
+		</script> 
+
+<p class="subtitle">
+		 <br>
+        spO2?</p>
+		
+		<button class="button is-success" onclick= "Done10(c)">Durchgeführt</button>
+
+		<table>
+		<tbody>
+		<tr>
+		<td><p id="demo21"></p>Min.</td>
+		<td><p id="demo22"></p>Sek.</td>
+		</tr>
+		</tbody>
+		</table>
+	
+		<script>
+		
+		f=Done10(c);
+		function Done10(b) {
+		  
+		  document.getElementById("demo21").innerHTML = ~~( b/60);
+		  document.getElementById("demo22").innerHTML = b%60;	 
+		}
+		</script> 
+		
+<p class="subtitle">
+		 <br>
+        Maßnahme?</p>
+		
+		<button class="button is-success" onclick= "Done11(c)">Durchgeführt</button>
+
+		<table>
+		<tbody>
+		<tr>
+		<td><p id="demo23"></p>Min.</td>
+		<td><p id="demo24"></p>Sek.</td>
+		</tr>
+		</tbody>
+		</table>
+	
+		<script>
+		
+		f=Done11(c);
+		function Done11(b) {
+		  
+		  document.getElementById("demo23").innerHTML = ~~( b/60);
+		  document.getElementById("demo24").innerHTML = b%60;	 
+		}
+		</script> 
+<br>
+<h1 class="title">
+        Circulation
+		</h1>
+
+<p class="subtitle">
+		 <br>
+        Radialis/Karotispuls getastet (Fq/Rh/Q)?</p>
+		
+		<button class="button is-success" onclick= "Done12(c)">Durchgeführt</button>
+
+		<table>
+		<tbody>
+		<tr>
+		<td><p id="demo25"></p>Min.</td>
+		<td><p id="demo26"></p>Sek.</td>
+		</tr>
+		</tbody>
+		</table>
+	
+		<script>
+		
+		f=Done12(c);
+		function Done12(b) {
+		  
+		  document.getElementById("demo25").innerHTML = ~~( b/60);
+		  document.getElementById("demo26").innerHTML = b%60;	 
+		}
+		</script> 	
+
+<p class="subtitle">
+		 <br>
+        Hautfarbe/-feuchtigkeit/-Temperatur beurteilt?</p>
+		
+		<button class="button is-success" onclick= "Done13(c)">Durchgeführt</button>
+
+		<table>
+		<tbody>
+		<tr>
+		<td><p id="demo27"></p>Min.</td>
+		<td><p id="demo28"></p>Sek.</td>
+		</tr>
+		</tbody>
+		</table>
+	
+		<script>
+		
+		f=Done13(c);
+		function Done13(b) {
+		  
+		  document.getElementById("demo27").innerHTML = ~~( b/60);
+		  document.getElementById("demo28").innerHTML = b%60;	 
+		}
+		</script> 
+
+<p class="subtitle">
+		 <br>
+        RekapZeit?</p>
+		
+		<button class="button is-success" onclick= "Done14(c)">Durchgeführt</button>
+
+		<table>
+		<tbody>
+		<tr>
+		<td><p id="demo29"></p>Min.</td>
+		<td><p id="demo30"></p>Sek.</td>
+		</tr>
+		</tbody>
+		</table>
+	
+		<script>
+		
+		f=Done14(c);
+		function Done14(b) {
+		  
+		  document.getElementById("demo29").innerHTML = ~~( b/60);
+		  document.getElementById("demo30").innerHTML = b%60;	 
+		}
+		</script> 
+
+<p class="subtitle">
+		 <br>
+        ggf Wärmeerhalt?</p>
+		
+		<button class="button is-success" onclick= "Done15(c)">Durchgeführt</button>
+
+		<table>
+		<tbody>
+		<tr>
+		<td><p id="demo31"></p>Min.</td>
+		<td><p id="demo32"></p>Sek.</td>
+		</tr>
+		</tbody>
+		</table>
+	
+		<script>
+		
+		f=Done15(c);
+		function Done15(b) {
+		  
+		  document.getElementById("demo31").innerHTML = ~~( b/60);
+		  document.getElementById("demo32").innerHTML = b%60;	 
+		}
+		</script> 	
+
+<p class="subtitle">
+		 <br>
+        ggf Lagerung?</p>
+		
+		<button class="button is-success" onclick= "Done16(c)">Durchgeführt</button>
+
+		<table>
+		<tbody>
+		<tr>
+		<td><p id="demo33"></p>Min.</td>
+		<td><p id="demo34"></p>Sek.</td>
+		</tr>
+		</tbody>
+		</table>
+	
+		<script>
+		
+		f=Done16(c);
+		function Done16(b) {
+		  
+		  document.getElementById("demo33").innerHTML = ~~( b/60);
+		  document.getElementById("demo34").innerHTML = b%60;	 
+		}
+		</script> 				
+
+<br>
+<h1 class="title">
+        STU
+		</h1>
+
+
+
 
     </div>
   </section>
